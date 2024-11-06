@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY SESSION-AYEN</title>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <header>
+        <h1>JQUERY SESSION-AYEN</h1>
+    </header>
+
+    <div class="container">
+        <nav class="nav">
+            <ul>
+                <li><a href="../Home.html">Home</a></li>
+                <li><a href="../pages/Accordion.html">Accordion</a></li>
+                <li><a href="../pages/Autocomplete.html">Autocomplete</a></li>
+                <li><a href="../pages/Button.html">Button</a></li>
+                <li><a href="../pages/Checkboxradio.html">Checkboxradio</a></li>
+                <li><a href="../pages/Controlgroup.html">Controlgroup</a></li>
+                <li><a href="../pages/Datepicker.html">Datepicker</a></li>
+                <li><a href="../pages/Dialog.html">Dialog</a></li>
+                <li><a href="../pages/Menu.html">Menu</a></li>
+                <li><a href="../pages/Progressbar.html">Progressbar</a></li>
+                <li><a href="../pages/Selectmenu.html">Selectmenu</a></li>
+                <li><a href="../pages/Slider.html">Slider</a></li>
+                <li><a href="../pages/Spinner.html">Spinner</a></li>
+                <li><a href="../pages/Tabs.html">Tabs</a></li>
+                <li><a href="../pages/Tooltip.html">Tooltip</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <h1>HOME</h1>
+            
+            <button onclick="confirmSubmission();">Click Me</button>
+            <button>JQuery Button</button>
+            <button id="idbutton">ID</button>
+            <button class="classbutton">CLASS</button>
+
+            <button id="Information">Click Me to Show Info</button>
+            <button id="hideInfo">Click Me to Hide Info</button>
+            <h1 id="showInfo" style="display: none;">You UnHide Me</h1>
+        </div>
+    </div>
+
+    <footer>
+        <p>College of Information and Computing Sciences &copy; 2024</p>  
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#idbutton").click(function() {
+                alert("ID Button was clicked");
+            });
+
+            $(".classbutton").click(function() {
+                alert("Class Button was clicked");
+            });
+
+            $("#Information").click(function() {
+                $("#showInfo").show();
+            });
+
+            $("#hideInfo").click(function() {
+                $("#showInfo").hide();
+            });
+        });
+    </script>
+</body>
+</html>

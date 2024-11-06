@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Structure</title>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+   <header>
+    <h1>JQUERY SESSION- AYEN</h1>
+   </header>
+   <section>
+    <nav>
+        <ul><li><a href="index.html">HOME</a></li></ul>
+        <ul><li><a href="pages/accordion.html">ACCORDION</a></li></ul>
+        <ul><li><a href="pages/autocomplete.html">AUTO COMPLETE</a></li></ul>
+        <ul><li><a href="pages/button.html">BUTTON</a></li></ul>
+        <ul><li><a href="pages/checkbox.html">CHECKBOX RADIO</a></li></ul>
+        <ul><li><a href="pages/controlgroup.html">CONTROL GROUP</a></li></ul>
+        <ul><li><a href="pages/datepicker.html">DATE PICKER</a></li></ul>
+        <ul><li><a href="pages/dialog.html">DIALOG</a></li></ul>
+        <ul><li><a href="pages/menu.html">MENU</a></li></ul>
+        <ul><li><a href="pages/progressbar.html">PROGRESS BAR</a></li></ul>
+        <ul><li><a href="pages/selectmenu.html">SELECT MENU</a></li></ul>
+        <ul><li><a href="pages/slider.html">SLIDER</a></li></ul>
+        <ul><li><a href="pages/spinner.html">SPINNER</a></li></ul>
+        <ul><li><a href="pages/tabs.html">TABS</a></li></ul>
+        <ul><li><a href="pages/tooltip.html">TOOL TIP</a></li></ul>
+    </nav>
+    <article>
+        <h1>HOME</h1>
+        <div class="row">
+            <div class="col-2"> 
+                <button id="idbutton">ID</button>
+                <button class="classbutton">CLASS</button>
+                <button id="Information">Click Me to Show Info</button>
+                <button id="hideInfo">Click Me to Hide Info</button>
+                <h1 id="showInfo" style="display:none;"> Marinduque State University</h1>
+            </div>
+        </div>
+    </div>  
+    </article>
+</section>
+    
+   <footer>
+        <h2>Marinduque State University</h2>     
+        <h2>College of Information and Computing Sciences </h2>
+    </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#idbutton").click(function(){
+                alert("ID Button was clicked");
+            });
+
+            $(".classbutton").click(function(){
+                alert("Class Button was clicked");
+            });
+
+            $("#Information").click(function(){
+                $("#showInfo").show();
+            });
+
+            $("#hideInfo").click(function(){
+                $("#showInfo").hide();
+            });
+        });
+    </script>
+</body>
+</html>

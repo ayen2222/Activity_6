@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+        .ui-menu { width: 150px; }
+    </style>
+</head>
+<body>
+    <header>
+      <div>
+        <h1>JQUERY SESSION- AYEN</h1>
+    </div>
+    
+    </header>
+    <section>
+        <nav>
+            <ul><li><a href="../index.html">HOME</a></li></ul>
+            <ul><li><a href="accordion.html">ACCORDION</a></li></ul>
+            <ul><li><a href="autocomplete.html">AUTO COMPLETE</a></li></ul>
+            <ul><li><a href="button.html">BUTTON</a></li></ul>
+            <ul><li><a href="checkbox.html">CHECKBOX RADIO</a></li></ul>
+            <ul><li><a href="controlgroup.html">CONTROL GROUP</a></li></ul>
+            <ul><li><a href="datepicker.html">DATE PICKER</a></li></ul>
+            <ul><li><a href="dialog.html">DIALOG</a></li></ul>
+            <ul><li><a href="menu.html">MENU</a></li></ul>
+            <ul><li><a href="progressbar.html">PROGRESS BAR</a></li></ul>
+            <ul><li><a href="selectmenu.html">SELECT MENU</a></li></ul>
+            <ul><li><a href="slider.html">SLIDER</a></li></ul>
+            <ul><li><a href="spinner.html">SPINNER</a></li></ul>
+            <ul><li><a href="tabs.html">TABS</a></li></ul>
+            <ul><li><a href="tooltip.html">TOOL TIP</a></li></ul>
+        </nav>
+        <article>
+          <h1>Menu</h1>
+          <ul id="menu" class="ui-widget">
+              <li class="ui-state-disabled"><div>Unavailable Items (n/a)</div></li>
+              <li><div>Books</div></li>
+              <li><div>Clothing</div></li>
+              <li>
+                  <div>Electronics</div>
+                  <ul class="submenu">
+                      <li><div>Mobile Phones</div></li>
+                      <li><div>Laptops</div></li>
+                      <li><div>Accessories</div></li>
+                  </ul>
+              </li>
+              <li><div>Movies & TV Shows</div></li>
+              <li>
+                  <div>Music</div>
+                  <ul class="submenu">
+                      <li>
+                          <div>Genres</div>
+                          <ul class="submenu">
+                              <li><div>Rock</div></li>
+                              <li><div>Jazz</div></li>
+                              <li><div>Classical</div></li>
+                          </ul>
+                      </li>
+                      <li><div>Artists</div></li>
+                      <li><div>Albums</div></li>
+                  </ul>
+              </li>
+              <li><div>Games</div>
+                  <ul class="submenu">
+                      <li><div>Action</div></li>
+                      <li><div>Adventure</div></li>
+                      <li><div>Puzzle</div></li>
+                  </ul>
+              </li>
+              <li class="ui-state-disabled"><div>Special Offers (n/a)</div></li>
+          </ul>
+      </article>
+      
+    </section>
+    <footer>
+        <h2>Marinduque State University</h2>     
+        <h2>College of Information and Computing Sciences </h2>
+    </footer>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#menu" ).menu();
+        } );
+    </script>
+</body>
+</html>
